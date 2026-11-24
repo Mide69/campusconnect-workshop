@@ -1,0 +1,28 @@
+{
+  "name": "campusconnect-workshop",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "dev:starter": "vite --host 0.0.0.0 --mode starter",
+    "build": "vite build",
+    "build:starter": "vite build --mode starter",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test src/model.test.js",
+    "package": "npm run build && node scripts/package.mjs"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "lucide-react": "1.78.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.8",
+    "@vitejs/plugin-react": "6.3.0",
+    "fflate": "0.8.2"
+  }
+}
